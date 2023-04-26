@@ -1,0 +1,78 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin: 35px 0px;
+}
+
+.video-player {
+    width: 960px;
+    height: 540px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-container img {
+    border: 0px;
+    width: 70px;
+}
+
+.button-container button {
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 10px 26px;
+    font-size: 22px;
+    margin: 20px 10px;
+}
+
+.button-container .inactive {
+    background-color: #000000;
+    color: #ffffff;
+
+    /* REMOVE THE LINE BELOW AFTER IMPLEMENTING FUNCTIONALITY OF THE BUTTON */
+    display: none;
+}
+
+.button-container .active {
+    background-color: #deba2c;
+    color: #000000;
+    
+    /* REMOVE THE LINE BELOW AFTER IMPLEMENTING FUNCTIONALITY OF THE BUTTON */
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .video-player {
+        width: 672px;
+        height: 378px;
+    }
+}
+
+@media (max-width: 900px) {
+    .video-player {
+        width: 480px;
+        height: 270px;
+    }
+}
+
+@media (max-width: 700px) {
+    .video-player {
+        width: 307px;
+        height: 173px;
+    }
+}

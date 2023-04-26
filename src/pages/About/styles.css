@@ -1,0 +1,67 @@
+.container {
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.about-title {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-size: 22px;
+    text-align: left;
+}
+
+.about-name {
+    font-size: 28px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.people-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 40px;
+    margin: 10px;
+    background-color: #deba2c;
+    box-shadow: 3px 5px #000000;
+
+    transition: transform .3s ease;
+}
+
+.person:hover {
+    transform: scale(1.04);
+}
+
+.person .about-text {
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .people-container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
